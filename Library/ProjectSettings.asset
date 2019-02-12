@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 13
-  productGUID: 8b51bc854870d44acbc9a607995ff4b6
+  productGUID: 54be9ada5ee91439492415eb8f56c9fe
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   defaultScreenOrientation: 4
@@ -12,7 +12,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: cs485_hw1
+  productName: cs485_hw2_first_person
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -420,7 +420,7 @@ PlayerSettings:
   ps4DownloadDataSize: 0
   ps4GarlicHeapSize: 2048
   ps4ProGarlicHeapSize: 2560
-  ps4Passcode: dMDPJdwuIss8HihUgLyEuosmLiq3gSUJ
+  ps4Passcode: LdSSNWFR9SSHRlB9Rg2AufxNH7DrFGQZ
   ps4pnSessions: 1
   ps4pnPresence: 1
   ps4pnFriends: 1
@@ -466,7 +466,7 @@ PlayerSettings:
   psp2LiveAreaTrialPath: 
   psp2PatchChangeInfoPath: 
   psp2PatchOriginalPackage: 
-  psp2PackagePassword: ofg6HcyZUofkXKCDgAPayHKHz9IeblvN
+  psp2PackagePassword: tq1EKEdSf6j6psGEYGPRtKmAS01fEPE5
   psp2KeystoneFile: 
   psp2MemoryExpansionMode: 0
   psp2DRMType: 0
@@ -521,14 +521,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: cs485_hw1
+  metroPackageName: cs485_hw2_first_person
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: cs485_hw1
+  metroApplicationDescription: cs485_hw2_first_person
   wsaImages: {}
   metroTileShortName: 
   metroCommandLineArgsFile: 
@@ -603,8 +603,8 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 70bd8d31-d3df-4f53-9654-ad58abb26284
-  projectName: cs485_hw1
+  cloudProjectId: e625c140-c81c-4e79-87b8-76f5c3c6b761
+  projectName: cs485_hw2_first_person
   organizationId: noneofyourbusinessatall
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
