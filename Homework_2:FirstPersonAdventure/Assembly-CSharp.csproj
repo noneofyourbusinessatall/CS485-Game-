@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\NPCFollow.cs" />
      <Compile Include="Assets\Scripts\Player_control.cs" />
      <Compile Include="Assets\Scripts\return_to_main.cs" />
+     <Compile Include="Assets\Scripts\Rotator.cs" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>/opt/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
  </Reference>

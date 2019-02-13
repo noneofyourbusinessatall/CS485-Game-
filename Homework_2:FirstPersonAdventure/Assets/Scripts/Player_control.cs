@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player_control : MonoBehaviour {
-	public bool cursor_check = true;
+	public int count = 0;
+	public bool cursor_check = false;
 	public float speed = 6.0F;
 	public float gravity = 20.0F;
 
@@ -30,6 +32,11 @@ public class Player_control : MonoBehaviour {
 				Cursor.lockState = CursorLockMode.None;
 				Cursor.visible = true;
 			}
+		if(controller.transform.position.y >= 10 || controller.transform.position.y <= -10) {
+			Cursor.lockState = CursorLockMode.None;
+			Cursor.visible = true;
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+		}
 	// Character is on ground (built-in functionality of Character Controller)
 	if (controller.isGrounded) {
 			if(Input.GetKey(KeyCode.Escape)) {
@@ -48,6 +55,7 @@ public class Player_control : MonoBehaviour {
 			}
 			float rotLeftRight = Input.GetAxis("Mouse X");
 			transform.Rotate(0, rotLeftRight, 0);
+			
 	// Use input up and down for direction, multiplied by speed
 	moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 	moveDirection = Camera.main.transform.TransformDirection(moveDirection);
@@ -59,4 +67,19 @@ public class Player_control : MonoBehaviour {
 	// Move Character Controller
 		controller.Move(moveDirection * Time.deltaTime);
 		}
+	void OnTriggerEnter(Collider other) {
+		if (other.gameObject.CompareTag("Pick Up")) {
+			other.gameObject.SetActive(false);
+			count++;
+		}
+		if (count == 1) {
+			Destroy(GameObject.Find("ZombieCube"));
+		}
+		if (count == 2) {
+			Destroy(GameObject.Find("ZombieCube_1"));
+		}
+		if (count == 3) {
+			Destroy(GameObject.Find("ZombieCube_2"));
+		}
 	}
+}
